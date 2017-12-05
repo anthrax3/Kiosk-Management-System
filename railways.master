@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="railways.master.cs" Inherits="master_railways" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link href="/w3.css" rel="stylesheet" runat="server"/>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="w3-container w3-teal">
+         <header>
+             <h2>Kiosk Management System</h2>
+         </header>
+     </div>
+        <br />
+         <div class="w3-bar w3-indigo w3-large" style="height: 47px">
+              <div class=" w3-bar-item w3-green ">
+                     
+        <asp:Label ID="Label2" runat="server"></asp:Label>
+
+                </div>
+                 <a href="/user/railways/seat_avail2.aspx" class="w3-bar-item w3-button w3-hover-green">Seat Availability</a>
+                <a href="/user/railways/tickets_booked.aspx" class="w3-bar-item w3-button w3-hover-green">My Bookings</a>
+                <a href="/user/railways/ticket_cancel.aspx" class="w3-bar-item w3-button w3-hover-green">Cancel Ticket</a>
+                <a href="/user/railways/farecard2.aspx" class="w3-bar-item w3-button w3-hover-green"> Fare Card</a>
+                <a href="/user/railways/train_sced2.aspx" class="w3-bar-item w3-button w3-hover-green">Train Schedule</a>
+              <a href="/userpage.aspx" class="w3-bar-item w3-button w3-right w3-hover-green">Home</a>
+                <div class=" w3-bar-item w3-right">
+                     
+        <asp:Label ID="Label1" runat="server"></asp:Label>
+
+                </div>
+            
+            </div>
+        
+        
+        <br />
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   
+    </form>
+</body>
+</html>

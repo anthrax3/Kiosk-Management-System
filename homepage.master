@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="homepage.master.cs" Inherits="master_homepage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="/w3.css" rel="stylesheet"  >
+
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div class="w3-container w3-teal" style="height: 76px">
+        <h1>Kiosk Mangement System</h1>
+        </div>
+       
+          <div class="w3-bar w3-indigo w3-xlarge">
+            <a href="homepage.aspx" class="w3-bar-item w3-button w3-hover-green">Home</a>
+            <a href="../aboutus.aspx" class="w3-bar-item w3-button  w3-hover-green">About Us</a>
+            <a href="../contactus.aspx" class="w3-bar-item w3-button  w3-hover-green"> Contact Us</a>
+            <a href="Registration.aspx" class="w3-bar-item w3-button w3-hover-green w3-right">Sign Up</a>
+            <a href="login.aspx" class="w3-bar-item w3-button w3-hover-green w3-right">Sign In</a>
+             </div>
+        <br />
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

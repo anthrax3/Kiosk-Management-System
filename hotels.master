@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="hotels.master.cs" Inherits="master_hotels" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link href="/w3.css" rel="stylesheet" runat="server"/>
+ 
+
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class="w3-container w3-teal">
+         <header>
+             <h2>Kiosk Management System</h2>
+         </header>
+     </div>
+
+         <div class="w3-bar w3-indigo w3-large" style="height: 47px">
+                <div class=" w3-bar-item w3-green ">
+                     
+        <asp:Label ID="Label2" runat="server"></asp:Label>
+
+                </div>
+                 <a href="../user/Hotels/hotel_avail.aspx" class="w3-bar-item w3-hover-green w3-button">Hotel Availability</a>
+                <a href="/user/buses/mybookings.aspx" class="w3-bar-item w3-hover-green w3-button">My Bookings</a>
+                <a href="/user/buses/cancel_Busticket.aspx" class="w3-bar-item w3-hover-green w3-button">Cancel Ticket</a>
+                
+              <a href="/userpage.aspx" class="w3-bar-item w3-hover-green w3-button w3-right">Home</a>
+                <div class=" w3-bar-item w3-right">
+                     
+        <asp:Label ID="Label1" runat="server"></asp:Label>
+
+                </div>
+            
+            </div>
+        
+        
+        <br />
+        <br />
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>

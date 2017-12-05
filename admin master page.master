@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin master page.master.cs" Inherits="admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="App_Data/w3.css" rel="stylesheet" runat="server"/>
+      <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" runat="server" />
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div class="w3-container w3-teal">
+        <header>
+            <h2>Kiosk Management System</h2>
+        </header>
+    </div>
+        <br />
+
+          <div class="w3-bar w3-indigo " >
+
+            <a href="#" class="w3-bar-item w3-green">HOME</a>
+    
+             
+              <div class="w3-dropdown-hover">
+                
+               <button class="w3-button">
+                   <asp:Label ID="Label2" runat="server" Text="Label">Airlines</asp:Label></button>
+                      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                         <a href="Airlines/view_airlines.aspx" class="w3-bar-item w3-button w3-hover-green">View Airlines</a>
+                         <a href="Airlines/add_airlines.aspx" class="w3-bar-item w3-button w3-hover-green">Add Airlines</a>
+          </div>
+          </div>
+
+               <div class="w3-dropdown-hover">
+                
+               <button class="w3-button">
+                   <asp:Label ID="Label3" runat="server" Text="Label">Railways</asp:Label></button>
+                      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                         <a href="trains/view trains.aspx" class="w3-bar-item w3-button w3-hover-green">View Trains</a>
+                         <a href="trains/train_reg.aspx" class="w3-bar-item w3-button w3-hover-green">Add Trains</a>
+                          <a href="trains/view_train Fares.aspx" class="w3-bar-item w3-button w3-hover-green">View Trains Fares</a>
+                          <a href="trains/train_fares.aspx" class="w3-bar-item w3-button w3-hover-green">Add Trains Fares</a>
+                          
+          </div>
+          </div>
+             
+                <div class="w3-dropdown-hover">
+                
+               <button class="w3-button">
+                   <asp:Label ID="Label4" runat="server" Text="Label">Buses</asp:Label></button>
+                      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                         <a href="buses/bus_view.aspx" class="w3-bar-item w3-button w3-hover-green">View Buses</a>
+                         <a href="buses/bus_reg.aspx" class="w3-bar-item w3-button w3-hover-green">Add Buses</a>
+                        
+                          
+          </div>
+          </div> 
+
+               <div class="w3-dropdown-hover">
+                
+               <button class="w3-button">
+                   <asp:Label ID="Label5" runat="server" Text="Label">Hotels</asp:Label></button>
+                      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                         <a href="hotels/view_hotels.aspx" class="w3-bar-item w3-button w3-hover-green">View Hotels</a>
+                         <a href="hotels/add_ hotels.aspx" class="w3-bar-item w3-button w3-hover-green">Add Hotels</a>
+                        
+                          
+          </div>
+          </div> 
+                
+               
+                
+                <a href="../logout.aspx" class="w3-bar-item w3-button w3-right w3-hover-green">Logout</a>
+                <a href="#" class="=w3-bar-item w3-button w3-right w3-hover-green">Change Password</a>
+            <div class=" w3-right">
+                
+ <button class="w3-button">
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></button>
+    
+    </div>
+              </div>
+        
+        
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+             </asp:ContentPlaceHolder>
+  
+    </form>
+</body>
+</html>

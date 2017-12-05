@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="userpage.master.cs" Inherits="master_userpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="/w3.css" rel="stylesheet" runat="server"/>
+ 
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div class="w3-container w3-teal">
+        <header>
+            <h2>Kiosk Management System</h2>
+        </header>
+    </div>
+        <br />
+
+       
+       
+        <div class="w3-bar w3-indigo w3-large" style="height: 42px">
+        <div class=" w3-left">
+                
+ <button class="w3-button w3-green">
+        <asp:Label ID="Label2" runat="server" Text="HOME"></asp:Label></button>
+            </div>  
+               
+               <a href="../user/railways/railways.aspx" class="w3-bar-item w3-hover-green w3-button">Railways</a>
+                <a href="../user/buses/buses.aspx" class="w3-bar-item w3-button w3-hover-green">Buses</a>
+                <a href="../user/Airlines/airlines.aspx"class ="w3-bar-item w3-hover-green w3-button">Airlines</a>
+                <a href="../user/Hotels/hotels.aspx" class="w3-bar-item w3-hover-green w3-button"> Hotels</a>
+                <a href="../logout.aspx" class="w3-bar-item w3-button w3-hover-green w3-right ">Logout</a>  
+              
+            <div class="w3-dropdown-hover w3-right">
+                
+ <button class="w3-button w3-hover-green">
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="update.aspx" class="w3-bar-item w3-hover-green w3-button">Update Profile</a>
+      <a href="../change_pass.aspx" class="=w3-bar-item w3-button w3-hover-green">Change Password</a>
+  
+     
+    </div>
+ 
+            </div>
+            </div>
+                 
+
+                 
+                
+
+         
+            <br />
+            <br />
+          <div class="body">
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+          </div>
+    
+    </form>
+</body>
+</html>
